@@ -1,0 +1,40 @@
+server:
+  port: 8087  # Define a porta em que o servidor será iniciado
+  servlet:
+    context-path: '/plataforma-ead-usuario/'  # Define o contexto base para os endpoints da aplicação
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs  # Especifica o caminho onde a documentação em formato JSON será exposta
+  swagger-ui:
+    path: /swagger-ui/index.html  # Define o caminho para acessar a interface do Swagger UI
+
+# Conexao da base de dados PostgreSQL
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/plataforma_ead_usuario
+    username: postgres
+    password: Postgre
+    driver-class-name: org.postgresql.Driver
+    hikari:
+        maximum-pool-size: 10
+
+  jpa: # Configuracoes do JPA
+    open-in-view: false
+    hibernate: # Configuracoes do hibernate
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      jdbc:
+        lob.non-contextual-creation: true # Nao carregar logs de erro do JDBC
+
+    properties: # Propiedades do JPA
+      hibernate:
+        show_sql: true # Exibe o SQL no console (Exibi os Scripts SQL)
+        format_sql: true   # Formata os comandos SQL para facilitar a leitura
+
+    SQL: debug # Exibe o SQL gerado pelo Hibernate
+
+    type:
+      descriptor:
+        sql:
+          BasicBinder: trace  # Exibe os par?metros que s�o inseridos no SQL
