@@ -1,0 +1,30 @@
+   A API de Usuários foi projetada com base nas melhores práticas do padrão RESTful, permitindo a realização de operações CRUD (Create, Read, Update, Delete) para o gerenciamento eficiente e escalável de dados de usuários. Os endpoints são organizados de forma clara por recursos, utilizando métodos HTTP padronizados, garantindo uma comunicação simples e intuitiva. 
+
+Além disso, a API oferece suporte a paginação, validação de dados e fornece respostas consistentes no formato JSON 
+
+# Recursos Utilizados no Projeto da API de Usuários 🔧
+
+* ### Ferramentas:
+
+      -JDK 17 ou superior. 
+      -IDE (IntelliJ IDEA, Eclipse ou VS Code). 
+      -Banco de dados (MySQL, PostgreSQL...). 
+      -Maven para gerenciamento de dependências. 
+      -Teste da API:  Postman para testar os endpoints 
+
+ 
+
+* ### Projeto criado com MAVE,
+* ### Uma organização modular, 
+* ### Arquivo .ymal para configurações,
+* ### Banco de dados Postgre,
+* ### Mapeamento das entidades e seus relacionamentos,
+* ### Visualização por campo com a anotação @JsonView,
+* ### Tratamento de exceptions,
+* ### Validações customizadas,
+* ### Configuração de Paginação e serialização,
+* ### Configuração de CORS,
+* ### Filtros avançados e dinâmicos,
+* ### Hateoas(Hypermedia),
+* ### Padrão de data ISO 8601 UTC,
+* ### Documentação da API.
