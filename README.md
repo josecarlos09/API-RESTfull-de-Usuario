@@ -9,16 +9,14 @@ Além disso, a API oferece suporte a paginação, validação de dados e fornece
 
       -JDK 17 ou superior. 
       -IDE (IntelliJ IDEA, Eclipse ou VS Code). 
-      -Banco de dados (MySQL, PostgreSQL...). 
-      -Maven para gerenciamento de dependências. 
       -Teste da API:  Postman para testar os endpoints 
 
- 
 
-* ### Projeto criado com MAVE,
-* ### Uma organização modular, 
+* ### Maven para gerenciamento de dependências,
+* ### Organização modular, 
 * ### Arquivo .ymal para configurações,
 * ### Banco de dados Postgre,
+* ### Padrão RESTful,
 * ### Mapeamento das entidades e seus relacionamentos,
 * ### Visualização por campo com a anotação @JsonView,
 * ### Tratamento de exceptions,
